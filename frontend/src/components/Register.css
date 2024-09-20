@@ -1,0 +1,77 @@
+/* Register.css */
+
+.reg-mainpage {
+  display: flex;
+  background-image: url(reg.jpg);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  padding: 20px;
+}
+
+.regform {
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  position: absolute;
+  top: 290px; /* adjusted top position to match .logform */
+  left: 160px;
+  box-sizing: border-box;
+}
+
+.regform h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.regform div {
+  margin-bottom: 0.5rem; /* added to match .logform */
+}
+
+.regform label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  gap: 10px; /* added to match .logform */
+}
+
+.regform input, .regform textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd; /* changed border color to match .logform */
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+.regform button {
+  background-color: #0586f6; /* changed background color to match .logform */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  margin-top: 1rem; /* Space above the button */
+}
+
+.regform button:hover {
+  background-color: #1605fd;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.error-message {
+  color: rgb(255, 0, 0); /* added to make error message in red color */
+  font-size: 14px;
+}

@@ -1,0 +1,59 @@
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:black;
+    color: white;
+    width: 1880px;
+    height: 200px;
+    bottom: 0;
+    position: relative;
+    margin: 0;
+     
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .footer-section p {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    text-decoration: underline;
+  }
+  
+  form input[type="email"] {
+    padding: 8px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    width: 70%; 
+  }
+  
+  form button {
+    padding: 8px 15px;
+    border: none;
+    width: auto;
+    border-radius: 3px;
+    background-color: #ff0404;
+    color: white;
+    
+  
+  }
+  
+  form button:hover {
+    background-color: #f96204;
+    border-radius: 10px;
+    
+  }
+  
