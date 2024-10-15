@@ -1,66 +1,139 @@
-.logmain{
-    display: flex;
-    background-image: url(reg.jpg);
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f4f8;
-    padding: 20px;
+@media only screen and (max-width: 480px) {
+  .logmain {
+    padding: 10px; /* Reduced padding for mobile */
+  }
+
+  .logform {
+    top: 100px; /* Adjusted position for mobile */
+    left: 0; /* Centered horizontally */
+    right: 0; /* Centered horizontally */
+    margin: auto; /* Center the form */
+    width: 90%; /* Full width on mobile */
+    max-width: 300px; /* Max width for mobile */
+  }
+
+  .logform h2 {
+    font-size: 1.5rem; /* Smaller title */
+  }
+
+  .logform label {
+    font-size: 1rem; /* Smaller label */
+  }
+
+  .logform input,
+  .logform button {
+    font-size: 1rem; /* Smaller input and button */
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .logmain {
+    padding: 15px; /* Adjusted padding for medium screens */
+  }
+
+  .logform {
+    top: 200px; /* Adjusted position for medium screens */
+    left: 50%; /* Centered horizontally */
+    transform: translateX(-50%); /* Center the form */
+  }
+
+  .logform h2 {
+    font-size: 1.6rem; /* Adjusted title size */
+  }
+
+  .logform label {
+    font-size: 1.1rem; /* Adjusted label size */
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .logmain {
+    padding: 20px; /* Original padding for larger screens */
+  }
+
+  .logform {
+    top: 290px; /* Original position */
+    left: 160px; /* Original left position */
+    max-width: 400px; /* Original max width */
+  }
+
+  .logform h2 {
+    font-size: 1.8rem; /* Original title size */
+  }
+}
+
+.logmain {
+  display: flex;
+  padding: 30px;
+  right: 20px;
+  background-image: url(reg.jpg);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  position: relative; /* Ensure absolute positioning of the form works */
 }
 
 .logform {
-    padding: 2rem;
-    border-radius: 8px;
-    max-width: 400px;
-    width: 100%;
-    position: absolute;
-    top:290px;
-    left: 160px;
-    box-sizing: border-box; 
-    }
-    .logform h2 {
-    margin-top: 0;
-    font-size: 1.8rem;
-    color: #333;
-    font-weight: 600;
-    }
-    .logform div {
-    margin-bottom: 0.5rem;
-    }
-    
-    .logform label {
-        display: block;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-        font-size: 1.2rem;
-        gap: 10px;
- 
-      }
-    .logform input, .logform textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-    }
-    form input:focus, form textarea:focus {
-    border-color: #00bcd4;
-    outline: none;
-    }
-    .logform button {
-    background-color: #0586f6;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    margin-top: 1rem; /* Space above the button */
-    }
-    .logform button:hover {
-    background-color: #1605fd;
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+  display: block;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px; /* Original max width */
+  width: 100%; /* Full width */
+  position: absolute; /* Position relative to the .logmain */
+  top: 290px; /* Original top position */
+  left: 160px; /* Original left position */
+  box-sizing: border-box;
+}
+
+.logform h2 {
+  margin-top: 0;
+  font-size: 1.8rem; /* Original title size */
+  color: #333;
+  font-weight: 600;
+}
+
+.logform div {
+  margin-bottom: 0.5rem;
+}
+
+.logform label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.logform input,
+.logform textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #070707;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.logform input:focus,
+.logform textarea:focus {
+  border-color: #00bcd4; /* Focus border color */
+  outline: none;
+}
+
+.logform button {
+  background-color: #0586f6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  margin-top: 1rem; /* Space above the button */
+}
+
+.logform button:hover {
+  background-color: #1605fd; /* Hover background color */
+  transform: scale(1.05); /* Scale effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}

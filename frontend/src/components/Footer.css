@@ -1,59 +1,89 @@
-.footer-main {
+@media only screen and (max-width: 480px) {
+  .footer-main {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center; /* Center items */
+    padding: 10px; /* Adjusted padding */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .footer-section {
+    margin-bottom: 20px; /* Space between sections */
+    text-align: center; /* Center text */
+  }
+
+  form input[type="email"] {
+    width: 80%; /* Increased width on mobile */
+  }
+
+  form button {
+    width: 80%; /* Match button width to input */
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .footer-main {
+    flex-direction: column; /* Stack items vertically on medium screens */
+    align-items: center; /* Center items */
+    padding: 15px; /* Adjusted padding */
+  }
+
+  .footer-section {
+    margin-bottom: 15px; /* Space between sections */
+    text-align: center; /* Center text */
+  }
+
+  form input[type="email"] {
+    width: 75%; /* Adjusted width on medium screens */
+  }
+
+  form button {
+    width: auto; /* Reset button width */
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .footer-main {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color:black;
+    background-color: black;
     color: white;
-    width: 1880px;
+    width: 100%; /* Full width for larger screens */
     height: 200px;
     bottom: 0;
     position: relative;
     margin: 0;
-     
   }
-  
-  .footer-section h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
+
+  .footer-section {
+    flex: 1; /* Allow sections to grow equally */
+    padding: 0 10px; /* Side padding for spacing */
   }
+}
+.footer-section1{
+  flex: 1;
+  padding: 0;
+  margin-left: 50%;
+}
+
+
+
+
+
+form {
+  display: flex; /* Align form elements in a row */
+  justify-content: center; /* Center form elements */
+  margin-top: 10px; /* Space above the form */
+}
+
+.femail{
+  height: 30px;
+  width: 300px;
+}
+.sbt{
+  height: 32px;
+  width: 80px;
+  background-color: rgb(254, 67, 5);
+  color: white;
   
-  .footer-section p {
-    margin-bottom: 10px;
-    color: white;
-  }
-  
-  .social-media a {
-    margin-right: 10px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .social-media a:hover {
-    text-decoration: underline;
-  }
-  
-  form input[type="email"] {
-    padding: 8px;
-    margin-right: 5px;
-    border: none;
-    border-radius: 3px;
-    width: 70%; 
-  }
-  
-  form button {
-    padding: 8px 15px;
-    border: none;
-    width: auto;
-    border-radius: 3px;
-    background-color: #ff0404;
-    color: white;
-    
-  
-  }
-  
-  form button:hover {
-    background-color: #f96204;
-    border-radius: 10px;
-    
-  }
-  
+}

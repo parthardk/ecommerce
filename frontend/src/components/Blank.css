@@ -1,10 +1,42 @@
-.blank{
-    width: 20px;
+.blank {
     background-color: white;
-    height: ;
-    opacity: 1%;
-}
-.bcontent{
+    opacity: 0.01; /* Adjusted to 1% opacity */
+  }
+  
+  .bcontent {
     color: white;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .bcontent {
+      font-size: 1rem; /* Adjust text size for small screens */
+    }
     
-}
+    .blank {
+      padding: 1rem; /* Add padding to make the element more visible */
+      opacity: 0.05; /* Slightly increase opacity for better readability */
+    }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .bcontent {
+      font-size: 1.2rem; /* Moderate text size for medium screens */
+    }
+    
+    .blank {
+      padding: 1.5rem; /* More padding for tablets */
+      opacity: 0.05;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .bcontent {
+      font-size: 1.5rem; /* Larger text for bigger screens */
+    }
+    
+    .blank {
+      padding: ; /* Full padding for large screens */
+      opacity: 0.01; /* Original opacity */
+    }
+  }
+  

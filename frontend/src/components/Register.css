@@ -1,61 +1,115 @@
 /* Register.css */
+@media only screen and (max-width: 480px) {
+  .regform {
+    top: 100px; 
+    left: 0; 
+    right: 0; 
+    margin: auto; 
+    width: 90%; 
+    max-width: 300px; 
+  }
+
+  .regform h2 {
+    font-size: 1.5rem; /* Smaller title */
+  }
+
+  .regform label {
+    font-size: 1rem; /* Smaller label */
+  }
+
+  .regform input,
+  .regform button {
+    font-size: 1rem; /* Smaller input and button */
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .regform {
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .regform h2 {
+    font-size: 1.6rem; /* Adjusted title size */
+  }
+
+  .regform label {
+    font-size: 1.1rem; /* Adjusted label size */
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .regform {
+    top: 290px;
+    left: 160px; 
+  }
+
+  .regform h2 {
+    font-size: 1.8rem; /* Original title size */
+  }
+}
 
 .reg-mainpage {
   display: flex;
+  right: 20px;
   background-image: url(reg.jpg);
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-color: #f0f4f8;
-  padding: 20px;
+  padding: 40px ;
+  position: relative;
 }
 
 .regform {
+  display: block;
   padding: 2rem;
   border-radius: 8px;
   max-width: 400px;
   width: 100%;
   position: absolute;
-  top: 290px; /* adjusted top position to match .logform */
-  left: 160px;
+  top: 210px;
+  left: 160px; 
   box-sizing: border-box;
 }
 
 .regform h2 {
   margin-top: 0;
-  font-size: 1.8rem;
+  font-size: 1.8rem; /* Original title size */
   color: #333;
   font-weight: 600;
 }
 
 .regform div {
-  margin-bottom: 0.5rem; /* added to match .logform */
+  margin-bottom: 0.5rem;
 }
 
 .regform label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  font-size: 1.2rem;
-  gap: 10px; /* added to match .logform */
+  font-size: 1.2rem; /* Consistent label size */
 }
 
-.regform input, .regform textarea {
+.regform input,
+.regform textarea {
   width: 100%;
   padding: 0.75rem;
-  border: 1px solid #ddd; /* changed border color to match .logform */
+  border: 1px solid #151515; 
   border-radius: 6px;
   font-size: 1rem;
   transition: border-color 0.3s;
 }
 
-form input:focus, form textarea:focus {
-  border-color: #00bcd4;
+.regform input:focus,
+.regform textarea:focus {
+  border-color: #00bcd4; /* Focus border color */
   outline: none;
 }
 
 .regform button {
-  background-color: #0586f6; /* changed background color to match .logform */
+  background-color: #0586f6;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -63,15 +117,16 @@ form input:focus, form textarea:focus {
   cursor: pointer;
   font-size: 1.2rem;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  margin-top: 1rem; /* Space above the button */
+  margin-top: 1rem; 
 }
 
 .regform button:hover {
-  background-color: #1605fd;
-  transform: scale(1.05);
+  background-color: #1605fd; 
+  transform: scale(1.05); 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .error-message {
-  color: rgb(255, 0, 0); /* added to make error message in red color */
+  color: rgb(255, 0, 0); 
   font-size: 14px;
 }

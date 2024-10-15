@@ -1,31 +1,86 @@
-.aboutmain{
-    background-image: url(service.jpeg);
-    padding: 10px;
-    height: 1000px;
-    width: 1900px;
-    background-repeat: no-repeat;
+@media only screen and (max-width: 480px) {
+  .acontent {
+    padding: 50px 20px; /* Reduce padding for small screens */
+    width: 100%; /* Make content take full width */
+    font-size: 16px; /* Adjust font size for readability */
+  }
+
+  .dashboard {
+    flex-direction: column; /* Stack dashboard items vertically */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .dashboard-item {
+    width: 100%; /* Full width for dashboard items */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .category-logo {
+    height: auto; /* Allow logo to resize */
+  }
 }
 
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .acontent {
+    padding: 150px 50px; /* Adjust padding */
+    width: 100%; /* Full width for content */
+    font-size: 18px; /* Adjust font size */
+  }
 
-.acontent{
-    padding: 300px 1170px;
-    font-size: 20px;
-    width: 450px;
-    margin-bottom: 40px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  .dashboard {
+    grid-template-columns: 1fr; /* Display dashboard items in one column */
+    padding: 50px; /* Adjust padding */
+  }
 
-    
+  .dashboard-item {
+    width: 80%; /* Reduce item width */
+    margin-left: 10%; /* Center the items */
+  }
 }
+
+@media only screen and (min-width: 769px) {
+  .acontent {
+    padding: 300px 1170px; /* Original padding */
+    width: 450px; /* Original width */
+  }
+
+  .dashboard {
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px;
+    padding: 70px; /* Original padding */
+  }
+
+  .dashboard-item {
+    width: 150px; /* Original item width */
+    margin-left: 200px; /* Original margin */
+  }
+}
+
+.aboutmain {
+  background-image: url(service.jpeg);
+  margin-top: -120px;
+  
+  height: 1000px;
+  width: 100%; /* Set width to 100% for responsiveness */
+  background-size: cover; /* Ensure the background covers the container */
+  background-repeat: no-repeat;
+}
+
+.acontent {
+  padding: 300px 1170px;
+  font-size: 20px;
+  width: 450px;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .dashboard {
   display: flex;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
   gap: 20px;
   margin-top: 0;
-  padding: 70px ;
-
-
+  padding: 70px;
 }
-
 
 .dashboard-item {
   text-align: center;
@@ -33,15 +88,12 @@
   height: auto;
   width: 150px;
   margin-left: 200px;
-
 }
 
-
-.category-logo {  
+.category-logo {
   width: 100%;
   height: 100%;
   margin-bottom: 10px;
-  
 }
 
 .dashboard a {

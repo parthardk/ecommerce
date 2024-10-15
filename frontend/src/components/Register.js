@@ -32,6 +32,7 @@ const Register = () => {
             }
         } catch (error) {
             console.error(error);
+            alert('Already exist user/email !')
         }
     };
 

@@ -41,7 +41,7 @@ const EventList = () => {
                         <div className="eventdate1">Date: {new Date(event.eventDate).toLocaleDateString()}</div>
                         <div className="eventtime1">Time: {event.eventTime}</div>
                         <div className="eventlocation1">Location: {event.eventLocation}</div>
-                        <div className="eventprice">Ticket Price: ${event.ticketPrice}</div>
+                        <div className="eventprice">Ticket Price: ₹{event.ticketPrice}</div>
                         <button className="eventbt1" onClick={() => handleSearch(event)} >Buy Ticket</button>
                     </div>
                 ))}

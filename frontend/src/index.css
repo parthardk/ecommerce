@@ -5,9 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Mobile screens (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Add padding for mobile-friendly content */
+  }
+}
+
+/* Tablets and small devices (481px to 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Slightly larger text for medium screens */
+    padding: 20px; /* Increase padding */
+  }
+}
+
+/* Laptops and desktops (769px and up) */
+@media only screen and (min-width: 769px) {
+  body {
+    font-size: 18px; /* Larger font for bigger screens */
+    padding: ; /* Add more padding for wider screens */
+  }
 }

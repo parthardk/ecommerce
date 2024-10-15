@@ -1,18 +1,80 @@
-   .booking-main{
-    background-size: cover;
-    
-    background-repeat: no-repeat; 
-    background-image: url(b1.jpg);
-    width: 1920px;
-    height:1000px;
-    min-height: 100vh;
-    padding: 20px 0 40px 0; 
-    margin-top: 0;
-    margin:0;
-   }
-    
+/* Responsive Media Queries */
+@media only screen and (max-width: 480px) {
     .bookform {
-    background-color:whitesmoke;
+      max-width: 90%;
+      padding: 1.5rem;
+      margin: 4rem auto;
+    }
+  
+    .bookform h2 {
+      font-size: 1.5rem;
+    }
+  
+    .bookform label {
+      font-size: 1rem;
+    }
+  
+    .bookform input,
+    .bookform select,
+    .bookform textarea {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .bookform button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .bookform {
+      max-width: 80%;
+      padding: 2rem;
+    }
+  
+    .bookform h2 {
+      font-size: 1.6rem;
+    }
+  
+    .bookform label {
+      font-size: 1.1rem;
+    }
+  
+    .bookform input,
+    .bookform select,
+    .bookform textarea {
+      padding: 0.65rem;
+      font-size: 1rem;
+    }
+  
+    .bookform button {
+      padding: 0.65rem 1.25rem;
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .bookform {
+      max-width: 600px;
+    }
+  }
+
+  /* General Styling */
+  .booking-main {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(b1.jpg);
+    width: 100%; /* Adjust to be responsive */
+    min-height: 100vh;
+    margin-left: -20px;
+    padding: 20px;
+   
+  }
+  
+  .bookform {
+    display: block;
+    background-color: whitesmoke;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -20,38 +82,45 @@
     opacity: 95%;
     margin: 6rem auto;
     animation: fadeIn 0.5s ease-out;
-    text-align: center; 
-    }
-    .bookform h2 {
+    text-align: center;
+  }
+  
+  .bookform h2 {
     margin-top: 0;
     font-size: 1.8rem;
     color: #333;
     font-weight: 600;
-    }
-    .bookform div {
+  }
+  
+  .bookform div {
     margin-bottom: 1.5rem;
-    }
-    
-    .bookform label {
+  }
+  
+  .bookform label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
     font-size: 1.2rem;
     gap: 10px;
-    }
-    .bookform input, .bookform textarea {
-    width: 100%;
+  }
+  
+  .bookform input,
+  .bookform textarea {
+    width: 95%;
     padding: 0.75rem;
-    border: 1px solid #ddd;
+    border: 1px solid #b4afaf;
     border-radius: 6px;
     font-size: 1rem;
     transition: border-color 0.3s;
-    }
-    form input:focus, form textarea:focus {
+  }
+  
+  form input:focus,
+  form textarea:focus {
     border-color: #00bcd4;
     outline: none;
-    }
-    .bookform button {
+  }
+  
+  .bookform button {
     background-color: #f60505;
     color: white;
     border: none;
@@ -61,46 +130,59 @@
     font-size: 1.2rem;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     margin-top: 1rem; /* Space above the button */
-    }
-    .bookform button:hover {
+  }
+  
+  .bookform button:hover {
     background-color: #f80707;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bookform select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    background-color: #ffffff;
+  }
+  
+  .bookform select:focus {
+    border-color: #00bcd4;
+    outline: none;
+  }
+  
+  .payment-method {
+    margin-bottom: 1.5rem;
+  }
+  
+  .payment-method label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .payment-method select:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .payment-method select:focus {
+    border-color: #00bcd4;
+    box-shadow: 0 0 8px rgba(0, 188, 212, 0.3);
+  }
+  
+  /* Optional: Animation for Form */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
     }
-    .bookform select {
-        width: 100%;
-        padding: 0.75rem;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        font-size: 1rem;
-        transition: border-color 0.3s;
-        background-color: #ffffff; /* Optional: Change the background color */
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
-    
-    .bookform select:focus {
-        border-color: #00bcd4;
-        outline: none;
-    }
-    
-    .payment-method {
-        margin-bottom: 1.5rem;
-    }
-    
-    .payment-method label {
-        display: block;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-        font-size: 1.2rem;
-        color: #333;
-    }
-    
-    .payment-method select:hover {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    
-    .payment-method select:focus {
-        border-color: #00bcd4;
-        box-shadow: 0 0 8px rgba(0, 188, 212, 0.3);
-    }
-    
+  }
   

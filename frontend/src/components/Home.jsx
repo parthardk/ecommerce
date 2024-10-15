@@ -41,8 +41,9 @@ function Home() {
           </select>
           <button onClick={handleSearch} className="searchbt">Search</button>
         </div>
+
       </div>
-      <div>
+      <div className='hcontent'>
       <Blank/>
       <About/>
 
